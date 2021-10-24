@@ -1,0 +1,25 @@
+/* ./your-css-folder/styles.css */
+/* Inicaliza todos los elementos html css para que no tengan estilos */
+@tailwind base;
+
+@tailwind components;
+/* GenerA el código de utiliria */
+@tailwind utilities;
+@layer utilities {
+  .input-form {
+    @apply leading-snug pl-2 py-3 border border-blue-300 w-full bg-gray-300;
+  }
+  .input-form:hover {
+    @apply text-white bg-gray-700;
+  }
+  .input-form:focus {
+    @apply outline-black;
+  }
+
+  .btn-primary {
+    @apply block my-auto mx-auto  p-3 rounded text-white;
+  }
+  .btn-secondary {
+    @apply block   p-3 rounded text-white bg-yellow-300;
+  }
+}
